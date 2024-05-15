@@ -7,7 +7,7 @@ function startGame(){
     tie = false;
     gameBoard = [0, 0, 0, 0, 0, 0, 0, 0, 0]
     document.querySelectorAll('.game-tile').forEach(tile => {
-        tile.classList.remove('player-one', 'player-two');
+        tile.textContent = '';
     });
     document.getElementById("win-container").style.display = "none";
 }
