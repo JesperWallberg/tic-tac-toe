@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tic-tac-toe</title>
+    <script type="text/javascript" src="scripts.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="startGame()">
+    <div class="game-container">
+        <h1 class="header-text">Tic-Tac-Toe</h1>
+        <div class="game-board">
+            <div class="game-tile" onclick="gameLogic(1)"></div>
+            <div class="game-tile" onclick="gameLogic(2)"></div>
+            <div class="game-tile" onclick="gameLogic(3)"></div>
+            <div class="game-tile" onclick="gameLogic(4)"></div>
+            <div class="game-tile" onclick="gameLogic(5)"></div>
+            <div class="game-tile" onclick="gameLogic(6)"></div>
+            <div class="game-tile" onclick="gameLogic(7)"></div>
+            <div class="game-tile" onclick="gameLogic(8)"></div>
+            <div class="game-tile" onclick="gameLogic(9)"></div>
+        </div>
+
+        <div class="score-board">
+            <div class="player">
+                <h1>Player 1</h1>
+                <div class="score" id="player-one-score">Score: 0</div>
+            </div>
+
+            <div class="player">
+                <h1>Player 2</h1>
+                <div class="score" id="player-two-score">Score: 0</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="win-container">
+        <div class="win-box">
+            <h1 id="win-text"></h1>
+            <button onclick="startGame()">New game</button>
+        </div>
+    </div>
+</body>
+</html>
